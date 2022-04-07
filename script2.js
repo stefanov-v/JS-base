@@ -25,7 +25,9 @@ let numberOfFilms = +prompt('Сколько фильмов вы уже посм�
     lastMovie, MovieRating;
 
 for (let i = 0; i < 2; i++) {
-    lastMovie = prompt('Один из последних просмотренных фильмов?', '');
+    do {
+        lastMovie = prompt('Один из последних просмотренных фильмов?', '');
+    } while (lastMovie == '' || lastMovie == undefined || lastMovie.length > 50);
     MovieRating = prompt('На сколько оцените его?', '');
     personalMovieDB.movies[lastMovie] = MovieRating;
 }
