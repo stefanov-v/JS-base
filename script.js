@@ -30,4 +30,13 @@ let numberOfFilms = +prompt('Сколько фильмов вы уже посм�
         actors: {},
         genres: [],
         privat: false
-    };
+    },
+    lastMovie, MovieRating;
+
+lastMovie = prompt('Один из последних просмотренных фильмов?', '');
+MovieRating = prompt('На сколько оцените его?', '');
+personalMovieDB.movies[lastMovie] = MovieRating;
+
+lastMovie = prompt('Один из последних просмотренных фильмов?', '');
+MovieRating = prompt('На сколько оцените его?', '');
+personalMovieDB.movies[lastMovie] = MovieRating;
