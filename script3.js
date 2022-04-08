@@ -33,6 +33,14 @@ const personalMovieDB = {
     privat: false
 };
 
+function showMyDB() {
+    if (!personalMovieDB.privat) {
+        console.log(personalMovieDB);
+    }
+}
+
+showMyDB();
+
 function rememberMyFilms() {
     for (let i = 0; i < 2; i++) {
         do {
