@@ -33,6 +33,16 @@ const personalMovieDB = {
     privat: false
 };
 
+function writeYourGenres() {
+    let favoriteGenre;
+    for (let i = 1; i < 4; i++) {
+        favoriteGenre = prompt(`Ваш любимый жанр под номером ${i}`);
+        personalMovieDB.genres[i] = favoriteGenre;
+    }
+}
+
+writeYourGenres();
+
 function showMyDB() {
     if (!personalMovieDB.privat) {
         console.log(personalMovieDB);
